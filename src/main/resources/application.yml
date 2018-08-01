@@ -1,0 +1,17 @@
+logging:
+  file: unitoch_nlp.log
+spring:
+  data:
+    elasticsearch:
+      host: 127.0.0.1
+      port: 9300
+      elasticsearchHome: /Users/rajanpunchouty/dev/tools/elasticsearch-5.5.0
+      cluster-name: crossref-data
+      properties:
+        path:
+          data: /Users/rajanpunchouty/data/es/data
+          logs: /Users/rajanpunchouty/data/es/logs
+        http:
+          enabled: true
+    mongodb:
+      database: crossref
